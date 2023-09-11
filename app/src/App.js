@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Navbar from './components/Navbar';
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
         <Router>
           <div className="App">
             <Header />
+            <Navbar />
             <Routes>
-              <Route path="/React-Portfolio" element={<About />} />
               <Route path="/" element={<About />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
