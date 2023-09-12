@@ -1,8 +1,8 @@
-import React from 'react'
-import facebook from '../images/fb logo.png'
-import twitter from '../images/twitter logo.png'
-import instagram from '../images/instagram logo.png'
-import gmail from '../images/gmail logo.png'
+import React from 'react';
+import facebook from '../images/fb logo.png';
+import twitter from '../images/twitter logo.png';
+import instagram from '../images/instagram logo.png';
+import gmail from '../images/gmail logo.png';
 
 export default function Footer() {
   return (
@@ -13,38 +13,46 @@ export default function Footer() {
 
       }}
     >
+          <a href='https://facebook.com'>
             <img
               src={facebook} 
               alt = "facebook logo"
               style = {{
-                width: '25px',
-                height: '25%',
-              }} 
+                width: '24px',
+                height: '85%',
+              }}
             />
+          </a>
+          <a href='https://twitter.com'>
             <img 
               src= {twitter} 
               alt= "twitter logo"
               style = {{
-                width: '25px',
-                height: '25%',
+                width: '24px',
+                height: '75%',
               }} 
             />
+          </a>
+          <a href='https://instagram.com'>
             <img 
               src = {instagram}
               alt ="instagram logo"
               style = {{
                 width: '24px',
-                height: '24px',
+                height: '75%',
               }} 
             />
+          </a>
+          <a href='https://gmail.com'>
             <img 
             src= {gmail}
             alt="gmail logo"
             style = {{
               width: '49px',
-              height: '25%',
+              height: '80%',
             }} 
           />
+        </a>
     </div>
   )
 }
